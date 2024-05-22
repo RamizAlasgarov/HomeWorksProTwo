@@ -30,10 +30,10 @@ public class Repository {
         if (id < 0 || id >= 10) {
             return;
         }
-        System.out.printf("imya: %s vozrast: %d", names[id], ages[id]);
+        System.out.printf("imya: %s, vozrast: %d .", names[id], ages[id]);
     }
     public void printPerson(String[] person) {
-        System.out.printf("imya: %s vozrast: %d", person[0], person[1]);
+        System.out.printf("imya: %s, vozrast: %d ", person[0], person[1]);
     }
 
 
