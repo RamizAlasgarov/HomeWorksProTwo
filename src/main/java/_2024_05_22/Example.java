@@ -7,7 +7,7 @@ public class Example {
         repo.createPerson("ima1", 23);
         repo.printPersonById(0);
         repo.printPersonById(2);
-        System.out.println();
+
 
 //        String[] person = repo.getPersonById(1);
 //        repo.printPerson(person);
