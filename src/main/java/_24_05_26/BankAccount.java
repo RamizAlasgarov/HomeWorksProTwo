@@ -6,13 +6,18 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@AllArgsConstructor
+
 @ToString
 @Getter
 @Setter
 public class BankAccount {
-    private String owner;
      double balance;
+    User user;
+
+    public BankAccount(double balance, User user) {
+        this.balance = balance;
+        this.user = user;
+    }
 
     public double deposit(double sum){
         if(sum < 0){
