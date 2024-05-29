@@ -11,11 +11,11 @@ public class VieweUser implements User{
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     @Override
     public String getRol() {
-        return null;
+        return this.rol;
     }
 }
