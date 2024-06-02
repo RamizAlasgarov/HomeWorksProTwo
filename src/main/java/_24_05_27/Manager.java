@@ -28,7 +28,7 @@ public class Manager extends Employee{
 
     @Override
     public double calculateBonus() {
-        return getSalary() + (getSubordinatesCount()*0.2);
+        return getSalary() + (getSubordinatesCount()*0.02);
     }
 
     @Override
@@ -37,4 +37,5 @@ public class Manager extends Employee{
                 "subordinatesCount=" + subordinatesCount +
                 '}';
     }
+
 }
