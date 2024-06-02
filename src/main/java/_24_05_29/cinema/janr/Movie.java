@@ -11,7 +11,7 @@ public class Movie implements Film{
 
     @Override
     public String getNazvaiyeFilma() {
-        return null;
+        return this.title;
     }
 
     @Override
