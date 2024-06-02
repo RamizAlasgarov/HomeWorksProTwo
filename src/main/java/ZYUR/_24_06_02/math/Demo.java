@@ -1,6 +1,4 @@
-package ZYUR._24_06_02;
-
-import _24_05_27.Manager;
+package ZYUR._24_06_02.math;
 
 import java.util.ArrayList;
 import java.util.List;
