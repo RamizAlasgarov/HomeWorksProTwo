@@ -1,6 +1,6 @@
 package ZYUR._24_06_02.example;
 
-import ZYUR._24_06_02.example.book.Book;
+
 import com.github.javafaker.Faker;
 
 import java.time.Duration;
@@ -33,7 +33,6 @@ public class Dev {
 //        getTime("binary",() -> binarySearch(books,author));
 
 
-
     }
 
     public static List<Book> getBooks() {
@@ -53,30 +52,29 @@ public class Dev {
         return -1;
     }
 
-    public static int binarySearch(List<Book> bookList,String author){
-        int last = bookList.size()-1;
+    public static int binarySearch(List<Book> bookList, String author) {
+        int last = bookList.size() - 1;
         int first = 0;
 
-        while (first <= last){
-            int middle = (last-first)/2;
+        while (first <= last) {
+            int middle = (last - first) / 2;
             Book book = bookList.get(middle);
-            if(book.getAuthor().equals(author)){
+            if (book.getAuthor().equals(author)) {
                 return middle;
             }
-            if(book.getAuthor().compareTo(author) > 0){
-                last = middle-1;
-            }
-            else {
-                first = middle+1;
+            if (book.getAuthor().compareTo(author) > 0) {
+                last = middle - 1;
+            } else {
+                first = middle + 1;
             }
         }
         return -1;
     }
 
-    public static void getTime(String name,Runnable runnable){
+    public static void getTime(String name, Runnable runnable) {
         LocalTime start = LocalTime.now();
         runnable.run();
         LocalTime end = LocalTime.now();
-        System.out.println(name + " " + Duration.between(start,end));
+        System.out.println(name + " " + Duration.between(start, end));
     }
 }
