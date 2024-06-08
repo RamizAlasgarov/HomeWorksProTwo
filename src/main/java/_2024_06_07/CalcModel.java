@@ -10,5 +10,15 @@ public abstract class CalcModel implements Model {
     protected int x;
     protected int y;
 
+    @Override
+    public void setX(int value) {
+        x = value;
+    }
+
+    @Override
+    public void setY(int value) {
+        y = value;
+    }
+
 
 }
