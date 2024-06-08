@@ -12,13 +12,15 @@ public class SumModel extends CalcModel {
         return super.x + super.y;
     }
 
-    @Override
-    public void setX(int value) {
-        super.x = value;
-    }
+
+}
+
+class Minus extends CalcModel {
 
     @Override
-    public void setY(int value) {
-        super.y = value;
+    public int result() {
+        return super.x - super.y;
     }
+
 }
+
