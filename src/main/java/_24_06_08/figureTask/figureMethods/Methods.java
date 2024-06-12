@@ -41,7 +41,7 @@ public class Methods implements FigureInterface {
     }
 
     @Override
-    public double getRadius(Figure figure) {
+    public double getArea(Figure figure) {
         double res = 0;
         if (figure instanceof Circle) {
             res = Math.PI * Math.pow(((Circle) figure).getRadius(), 2);
