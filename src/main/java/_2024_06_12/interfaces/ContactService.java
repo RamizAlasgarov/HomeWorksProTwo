@@ -9,7 +9,7 @@ public interface ContactService {
 
     List<Contact> getContacts();
 
-    Contact refleshContact();
+    void refleshContact(int id, Contact contact);
 
     void deleteContactWithId(int id);
 }

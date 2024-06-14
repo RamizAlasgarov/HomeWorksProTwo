@@ -27,9 +27,10 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public Contact refleshContact() {
+    public void refleshContact(int id, Contact contact) {
+        deleteContactWithId(id);
+        createNewContact(contact);
 
-        return null;
     }
 
     @Override

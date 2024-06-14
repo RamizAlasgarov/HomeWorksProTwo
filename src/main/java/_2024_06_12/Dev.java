@@ -6,17 +6,8 @@ public class Dev {
         FakerContacts fakerContacts = new FakerContacts();
         Contact contact = new Contact(100, "qwe", 12313, "adsff@gmail.com");
         contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        contactService.createNewContact(contact);
-        fakerContacts.createTenContact(contactService.contactList);
-        contactService.getContacts().forEach(e -> System.out.println(e));
-        System.out.println("-------------------------------------");
-        contactService.deleteContactWithId(100);
-        System.out.println(contactService.getContacts());
+        fakerContacts.createTenContact(contactService.contactList).forEach(e -> System.out.println(e));
+
+
     }
 }
