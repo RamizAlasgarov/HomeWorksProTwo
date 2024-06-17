@@ -1,6 +1,6 @@
-package _2024_06_12.interfaces;
+package _24_06_12.interfaces;
 
-import _2024_06_12.Contact;
+import _24_06_12.Contact;
 
 import java.util.List;
 

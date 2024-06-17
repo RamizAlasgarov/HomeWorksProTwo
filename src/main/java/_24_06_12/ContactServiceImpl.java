@@ -1,6 +1,6 @@
-package _2024_06_12;
+package _24_06_12;
 
-import _2024_06_12.interfaces.ContactService;
+import _24_06_12.interfaces.ContactService;
 import lombok.ToString;
 
 import java.util.ArrayList;

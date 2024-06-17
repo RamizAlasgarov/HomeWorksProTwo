@@ -1,4 +1,4 @@
-package _2024_06_12;
+package _24_06_12;
 
 public class Dev {
     public static void main(String[] args) {
