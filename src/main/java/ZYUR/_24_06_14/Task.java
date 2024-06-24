@@ -8,31 +8,38 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 /**
- * 1 Создайте список чисел и используйте Stream API, чтобы отфильтровать только четные числа.
- * 2 Создайте список строк и используйте Stream API, чтобы создать новый список, где каждая строка будет в верхнем регистре.
- * 3 Создайте список строк и используйте Stream API для сортировки строк в алфавитном порядке.
  * 4 Создайте список чисел и используйте Stream API, чтобы получить первые три элемента, а затем пропустить следующие два.
  * 5 Создайте список строк и используйте Stream API, чтобы найти первую строку, начинающуюся с определенной буквы.
  * 6  Создайте список объектов с числовым полем и используйте Stream API для вычисления суммы этих числовых полей.
  */
 public class Task {
     public static void main(String[] args) {
+        /**
+         * 1 Создайте список чисел и используйте Stream API, чтобы отфильтровать только четные числа.
+         */
         List<Integer> list = List.of(1, 3, 6, 7, 8);
         List<Integer> filtred = list.stream()
                 .filter(n -> n % 2 > 0)
                 .toList();
         System.out.println(filtred);
 
+        /**
+         * 2 Создайте список строк и используйте Stream API, чтобы создать новый список, где каждая строка будет в верхнем регистре.
+         */
         List<String> str = List.of("unit", "test", "mockito");
         List<String> upperCase = str.stream()
                 .map(s -> s.toUpperCase(Locale.ROOT))
                 .collect(Collectors.toList());
         System.out.println(upperCase);
 
+
+        /**
+         * 3 Создайте список строк и используйте Stream API для сортировки строк в алфавитном порядке.
+         */
         List<String> sorted = str.stream()
                 .sorted()
                 .toList();
-        System.out.println(sorted);
+        System.out.println(sorted + " для сортировки строк в алфавитном порядке.");
 
         List<String> sortedByLength = str.stream()
                 .sorted(Comparator.comparingInt(String::length))
