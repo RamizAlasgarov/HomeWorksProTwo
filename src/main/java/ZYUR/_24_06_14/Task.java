@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 /**
  * 4 Создайте список чисел и используйте Stream API, чтобы получить первые три элемента, а затем пропустить следующие два.
- * 5 Создайте список строк и используйте Stream API, чтобы найти первую строку, начинающуюся с определенной буквы.
+ * <p>
  * 6  Создайте список объектов с числовым полем и используйте Stream API для вычисления суммы этих числовых полей.
  */
 public class Task {
@@ -55,7 +55,7 @@ public class Task {
         System.out.println(str.stream().filter(s -> s.startsWith("t")).findFirst().orElseThrow());
 
         /**
-         * 5
+         * 5 Создайте список строк и используйте Stream API, чтобы найти первую строку, начинающуюся с определенной буквы.
          */
         List<String> stringList = List.of("privet", "kak dela", "ok", "poka");
         System.out.println(stringList.stream().filter(e -> e.startsWith("p")).findFirst().orElseThrow());

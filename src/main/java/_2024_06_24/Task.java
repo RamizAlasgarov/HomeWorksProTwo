@@ -11,6 +11,7 @@ public class Task {
         int sumLR = 0;
         int sumRL = 0;
 
+
 //        for (int i = 0; i < array.length; i++) {
 //            for (int j = 0; j < array.length; j++) {
 //                if (i == j) {

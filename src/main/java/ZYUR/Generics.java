@@ -16,9 +16,9 @@ public class Generics {
 
         String str = "privet kak dela vse ok da ok poka";
         Runnable runnable1 = () -> System.out.println(str);
-        Runnable runnable2 = () -> System.out.printf("%s %n",str);
+        Runnable runnable2 = () -> System.out.printf("%s %n", str);
         Runnable runnable3 = () -> System.err.printf(str);
-        List<Runnable> runnableList = List.of(runnable1,runnable2,runnable3);
+        List<Runnable> runnableList = List.of(runnable1, runnable2, runnable3);
         prntInformation(runnableList);
 
     }
@@ -29,7 +29,7 @@ public class Generics {
         return clone;
     }
 
-    public static void prntInformation(List<Runnable> runnableList){
+    public static void prntInformation(List<Runnable> runnableList) {
         runnableList.forEach(Runnable::run);
     }
 
