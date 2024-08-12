@@ -1,8 +1,8 @@
-package ZYUR._2024_06_30;
+package ZYUR._24_06_30;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Egg extends Thread {
+public class Chicken extends Thread {
 
     @Override
     public void run() {

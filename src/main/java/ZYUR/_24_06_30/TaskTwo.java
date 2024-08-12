@@ -1,4 +1,4 @@
-package ZYUR._2024_06_30;
+package ZYUR._24_06_30;
 
 import java.util.Arrays;
 

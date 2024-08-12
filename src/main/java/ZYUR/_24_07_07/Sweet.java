@@ -1,4 +1,4 @@
-package ZYUR._2024_07_07;
+package ZYUR._24_07_07;
 
 
 public record Sweet(int id) {
